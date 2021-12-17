@@ -21,7 +21,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 app.include_router(post.router)
 app.include_router(user.router)
 app.include_router(auth.router)
@@ -30,4 +29,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to my api!!!!!!"}
+    return {"message": "Welcome to my api!!!!!!!!"}
