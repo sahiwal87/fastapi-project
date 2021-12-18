@@ -38,6 +38,7 @@ def create_posts(post: schemas.PostCreate, db: Session = Depends(get_db),
     return new_post
 
 
+
 @router.get("/{id}", response_model=schemas.PostOut)
 def get_post(id: int, response: Response, db: Session = Depends(get_db),
                 current_user: int = Depends(oauth2.get_current_user)):
